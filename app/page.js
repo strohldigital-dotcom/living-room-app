@@ -36,21 +36,13 @@ export default function HomePage() {
       {/* Main content */}
       <div className="min-h-screen flex flex-col items-center justify-center px-6 py-24">
         <div className="text-center max-w-3xl w-full">
-          <div className="flex justify-center mb-8">
-            <div className="flex gap-1.5">
-              {COLOR_BAR.map((color) => (
-                <div key={color} className="w-3 h-3 rounded-full" style={{ backgroundColor: color }} />
-              ))}
-            </div>
-          </div>
-
           <div className="flex justify-center mb-6">
             <Image
               src="/unalome.png"
               alt="Unalome"
               width={1295}
               height={2077}
-              style={{ height: '80px', width: 'auto' }}
+              style={{ height: '120px', width: 'auto' }}
             />
           </div>
 
