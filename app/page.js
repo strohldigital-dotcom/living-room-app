@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 
 const COLOR_BAR = ['#3DAF2C', '#FDAB1C', '#1A1A1A', '#47C8F0', '#F0130F']
@@ -41,6 +42,16 @@ export default function HomePage() {
                 <div key={color} className="w-3 h-3 rounded-full" style={{ backgroundColor: color }} />
               ))}
             </div>
+          </div>
+
+          <div className="flex justify-center mb-6">
+            <Image
+              src="/unalome.png"
+              alt="Unalome"
+              width={1295}
+              height={2077}
+              style={{ height: '80px', width: 'auto' }}
+            />
           </div>
 
           <h1 className="text-5xl md:text-7xl font-black tracking-tighter text-gray-900 leading-none mb-6">
